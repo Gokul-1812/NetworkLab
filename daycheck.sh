@@ -1,12 +1,14 @@
 #!/bin/bash
 
-echo "Enter a number: "
+echo 'Enter a number'
 read n
+
 f=1
 
-while [[ $n -gt 0 ]]
+while [[ $n > 0 ]]
 do
     f=$(( $f*n ))
     n=$((n-1))
 done
-echo "Fact $f"
+
+echo "Factorial is :$f "
